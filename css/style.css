@@ -1,0 +1,184 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-dark: #1a1a1a;
+  --color-light: #ffffff;
+  --color-accent: #7a2e2e;
+  --font-heading: "Pixelify Sans", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+.logo,
+.nav-links a,
+.cta-button {
+  font-family: var(--font-heading);
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+  background-color: var(--color-dark);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 100px;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-family: var(--font-heading);
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--color-light);
+  text-decoration: none;
+}
+
+.nav-links a.active {
+  color: var(--color-accent);
+}
+
+/* Hero Section Styles */
+
+#hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 150px;
+}
+
+#hero p {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+#hero h1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+#hero span {
+  font-size: 50px;
+  font-weight: 800;
+  color: var(--color-accent);
+}
+
+#hero h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#hero a {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.hero-img {
+  width: 350px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: var(--color-accent);
+  color: var(--color-light);
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 24px;
+}
+
+/* Introduction Section Styles */
+
+#introduction {
+  padding: 0px 150px;
+}
+
+#introduction h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#introduction p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#introduction span {
+  font-weight: 900;
+  font-style: italic;
+  color: var(--color-accent);
+}
+
+/* Footer Styles */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 100px;
+  margin-top: 100px;
+  background-color: var(--color-dark);
+}
+
+footer p {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-light);
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.socials i {
+  font-size: 24px;
+  color: var(--color-light);
+}
+
+.copyright-symbol {
+  font-family: var(--font-body);
+  color: var(--color-light);
+}
+
+footer span {
+  color: var(--color-accent);
+}
