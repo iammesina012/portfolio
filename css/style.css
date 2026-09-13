@@ -12,16 +12,17 @@
   --color-accent: #7a2e2e;
   --font-heading: "Pixelify Sans", sans-serif;
   --font-body: "Inter", sans-serif;
+  --font-main: "Inter", sans-serif;
 }
 
 .logo,
 .nav-links a,
 .cta-button {
-  font-family: var(--font-heading);
+  font-family: var(--font-main);
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: var(--font-main);
   font-weight: 600;
   color: var(--color-dark);
   background-color: var(--color-light);
@@ -29,6 +30,7 @@ body {
 }
 
 /* Header Styles */
+
 header {
   background-color: var(--color-dark);
   position: sticky;
@@ -44,9 +46,9 @@ nav {
 }
 
 .logo {
-  font-family: var(--font-heading);
+  font-family: var(--font-main);
   font-size: 32px;
-  font-weight: 700;
+  font-weight:700;
   color: var(--color-accent);
   text-decoration: none;
 }
@@ -58,8 +60,8 @@ nav {
 }
 
 .nav-links a {
-  font-family: var(--font-heading);
-  font-size: 21px;
+  font-family: var(--font-main);
+  font-size: 20px;
   font-weight: 600;
   color: var(--color-light);
   text-decoration: none;
@@ -69,6 +71,7 @@ nav {
   color: var(--color-accent);
 }
 
+/* Home Section Styles */
 /* Hero Section Styles */
 
 #hero {
@@ -127,16 +130,18 @@ nav {
 
 #introduction {
   padding: 0px 150px;
+  margin-bottom: 50px;
 }
 
 #introduction h2 {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 700;
 }
 
 #introduction p {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: justify;
 }
 
 #introduction span {
@@ -152,12 +157,12 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 15px 100px;
-  margin-top: 100px;
+
   background-color: var(--color-dark);
 }
 
 footer p {
-  font-family: var(--font-heading);
+  font-family: var(--font-main);
   font-size: 20px;
   font-weight: 600;
   color: var(--color-light);
@@ -175,10 +180,455 @@ footer p {
 }
 
 .copyright-symbol {
-  font-family: var(--font-body);
+  font-family: var(--font-main);
   color: var(--color-light);
 }
 
 footer span {
   color: var(--color-accent);
+}
+
+/* About Section Styles */
+
+#about-intro {
+  padding: 50px 150px;
+}
+
+#about-intro h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+#about-intro p,
+#about-intro ul {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--color-dark);
+  text-align: justify;
+}
+
+#about-intro ul {
+  padding-left: 50px;
+}
+
+#about-intro span {
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+/* Programming Languages Section Styles */
+
+#languages {
+  padding: 0px 150px;
+}
+
+#languages h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+/* Frameworks Section Styles */
+
+#frameworks {
+  padding: 30px 150px;
+}
+
+#frameworks h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+/* Backend & Databases Section Styles */
+
+#backend-databases {
+  padding: 0px 150px;
+}
+
+#backend-databases h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+/* Tools Section Styles */
+
+#tools {
+  padding: 30px 150px;
+}
+
+#tools h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+/* Game Development Section Styles */
+
+#game-development {
+  padding: 0px 150px;
+  margin-bottom: 50px;
+}
+
+#game-development h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+/* Skills Section Styles */
+
+#languages ul,
+#frameworks ul,
+#backend-databases ul,
+#tools ul,
+#game-development ul {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+#languages li,
+#frameworks li,
+#backend-databases li,
+#tools li,
+#game-development li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  border-radius: 50px;
+  font-size: 18px;
+}
+
+/* Projects Section Styles */
+
+#projects-intro {
+  padding: 50px 150px;
+  text-align: center;
+}
+
+#projects-intro h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+#projects-intro p {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+#project-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0px 150px;
+}
+
+.project-card {
+  max-width: 550px;
+  padding: 24px;
+  border-radius: 20px;
+  background-color: var(--color-dark);
+  margin-bottom: 50px;
+}
+
+.project-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.project-card h2 {
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--color-light);
+  margin-top: 20px;
+  text-align: center;
+}
+
+.project-card p {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-light);
+  text-align: justify;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+}
+
+.tech-stack li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background-color: var(--color-accent);
+  color: var(--color-light);
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+.tech-stack li img {
+  width: 18px;
+  height: 18px;
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.github-link img {
+  width: 18px;
+  height: 18px;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.project-links {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/* Resume Section Styles */
+
+/* The whole resume box/card - outer container with border */
+#resume-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+  border: 2px solid var(--color-dark);
+  border-radius: 12px;
+}
+
+/* Top part - your name, address, email, phone, social links */
+.resume-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Your name ("Michael William Mesina") */
+.resume-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* Links inside the header - email, LinkedIn, GitHub, Salesforce Trailhead */
+.resume-header a {
+  color: var(--color-accent);
+}
+
+/* Each major block - Professional Summary, Work Experience, Projects, Education, Skills, Certifications */
+.resume-section {
+  margin-bottom: 30px;
+}
+
+/* Section titles - "PROFESSIONAL SUMMARY", "WORK EXPERIENCE", etc. */
+.resume-section h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-accent);
+  border-bottom: 2px solid var(--color-dark);
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+/* One single job/project entry (e.g. one specific job, or one specific project) */
+.resume-entry {
+  margin-bottom: 20px;
+}
+
+/* The row containing a job/project title AND its date, side by side */
+.resume-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+/* The job/project title itself (e.g. "Salesforce Administrator Intern") */
+.resume-entry-header h4 {
+  font-size: 18px;
+  font-weight: 700;
+  flex: 1;
+}
+
+/* The date next to each job/project title (e.g. "Feb 2026 - May 2026") */
+.resume-entry-header span {
+  font-size: 14px;
+  color: var(--color-dark);
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* Bullet point lists under each job/project (the actual descriptions) */
+.resume-section ul {
+  padding-left: 20px;
+}
+
+/* Each individual bullet point line */
+.resume-section li {
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+/* Justifies text for both bullet points AND paragraphs (like Professional Summary, Skills text) */
+.resume-section li,
+.resume-section p {
+  text-align: justify;
+}
+
+.resume-section strong {
+  font-weight: 800;
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: var(--color-accent);
+  font-size: 20px;
+  color: var(--color-light);
+  text-decoration: none;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 50px auto;
+}
+
+/* Contact Section Styles */
+
+#contact-intro {
+  padding: 50px 150px;
+  text-align: center;
+}
+
+#contact-intro h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+#contact-intro p {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+#contact-form {
+  padding: 0 150px;
+}
+
+#contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact-form label {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: -8px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 12px;
+  border: 2px solid var(--color-dark);
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: var(--font-main);
+}
+
+#contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+#contact-form button {
+  padding: 12px 28px;
+  background-color: var(--color-accent);
+  color: var(--color-light);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  margin: 30px auto;
+  color: var(--color-dark);
+  font-weight: 700;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid var(--color-dark);
+}
+
+.divider span {
+  padding: 0 16px;
+}
+
+.contact-socials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.contact-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  background-color: var(--color-dark);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--color-light);
+  font-weight: 700;
 }
